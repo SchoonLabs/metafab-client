@@ -1,0 +1,84 @@
+{
+  "name": "metafab-client",
+  "version": "0.1.11",
+  "description": "MetaFab Typescript Client SDK",
+  "main": "./build/cjs/index.js",
+  "module": "./build/esm/index.js",
+  "types": "./build/esm/index.d.ts",
+  "files": [
+    "/build"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c --watch",
+    "format": "prettier \"src/**/*.ts\" --write",
+    "format:check": "prettier \"src/**/*.ts\" --check",
+    "fix:prettier": "prettier \"src/**/*.ts\" --write",
+    "test": "run-s build test:* --silent",
+    "test:prettier": "run-s fix:prettier",
+    "test:unit": "jest --verbose",
+    "coverage": "npm run test -- --coverage",
+    "prepare": "npm run build",
+    "trypublish": "npm publish || true"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-transform-typescript": "^7.20.13",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^9.1.2",
+    "babel-preset-minify": "^0.5.2",
+    "coverage-badge-creator": "^1.0.16",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "dotenv": "^16.0.3",
+    "eslint": "^7.32.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.7",
+    "jest-junit": "^13.0.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "rollup": "^3.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.5",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.9.5",
+    "url-loader": "^4.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schoonlabs/metafab-client"
+  },
+  "author": "Dan Schoonmaker <dan@schoonlabs.com> (https://github.com/dschoon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schoonlabs/metafab-client/issues"
+  },
+  "homepage": "https://github.com/schoonlabs/metafab-client",
+  "keywords": [
+    "metafab",
+    "client",
+    "typescript",
+    "web3"
+  ],
+  "engines": {
+    "node": "^18.7.0 || >= 14",
+    "npm": "^8.16.0 || >= 8"
+  }
+}

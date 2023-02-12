@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="17" failures="0" errors="0" time="24.8">
+  <testsuite name="Transactions endpoints" errors="0" failures="0" skipped="0" timestamp="2023-02-12T22:35:36" time="12.489" tests="2">
+    <testcase classname="Transactions endpoints should initialize class" name="Transactions endpoints should initialize class" time="0.696">
+    </testcase>
+    <testcase classname="Transactions endpoints should get a transaction" name="Transactions endpoints should get a transaction" time="0.164">
+    </testcase>
+  </testsuite>
+  <testsuite name="Game endpoints" errors="0" failures="0" skipped="2" timestamp="2023-02-12T22:35:36" time="12.775" tests="4">
+    <testcase classname="Game endpoints should initialize class" name="Game endpoints should initialize class" time="0.564">
+    </testcase>
+    <testcase classname="Game endpoints should authenticate to game" name="Game endpoints should authenticate to game" time="0.263">
+    </testcase>
+    <testcase classname="Skipped Game endpoints should create a new game on the Polygon Testnet" name="Skipped Game endpoints should create a new game on the Polygon Testnet" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Skipped Game endpoints should update a game on the Polygon Testnet" name="Skipped Game endpoints should update a game on the Polygon Testnet" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="Currency endpoints" errors="0" failures="0" skipped="0" timestamp="2023-02-12T22:35:36" time="13.072" tests="3">
+    <testcase classname="Currency endpoints should initialize class" name="Currency endpoints should initialize class" time="0.75">
+    </testcase>
+    <testcase classname="Currency endpoints should get currencies of a game" name="Currency endpoints should get currencies of a game" time="0.183">
+    </testcase>
+    <testcase classname="Currency endpoints should get currency balance for player wallet" name="Currency endpoints should get currency balance for player wallet" time="0.251">
+    </testcase>
+  </testsuite>
+  <testsuite name="Player endpoints" errors="0" failures="0" skipped="2" timestamp="2023-02-12T22:35:36" time="13.024" tests="5">
+    <testcase classname="Player endpoints should initialize class" name="Player endpoints should initialize class" time="0.648">
+    </testcase>
+    <testcase classname="Player endpoints should authenticate a player" name="Player endpoints should authenticate a player" time="0.261">
+    </testcase>
+    <testcase classname="Player endpoints should get all players" name="Player endpoints should get all players" time="0.206">
+    </testcase>
+    <testcase classname="Skipped Player endpoints should create a new player on the Polygon Testnet" name="Skipped Player endpoints should create a new player on the Polygon Testnet" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="Skipped Player endpoints should update a player on the Polygon Testnet" name="Skipped Player endpoints should update a player on the Polygon Testnet" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="Wallet endpoints" errors="0" failures="0" skipped="0" timestamp="2023-02-12T22:35:36" time="13.78" tests="3">
+    <testcase classname="Wallet endpoints should initialize class" name="Wallet endpoints should initialize class" time="0.786">
+    </testcase>
+    <testcase classname="Wallet endpoints should get wallet balance" name="Wallet endpoints should get wallet balance" time="1.567">
+    </testcase>
+    <testcase classname="Wallet endpoints should get wallet transactions" name="Wallet endpoints should get wallet transactions" time="0.173">
+    </testcase>
+  </testsuite>
+</testsuites>

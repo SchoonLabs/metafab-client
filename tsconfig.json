@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src/",
+    "outDir": "build",
+    "declarationDir": "build",
+    "target": "es2020",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "strict": false,                                     /* Enable all strict type-checking options. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */,
+    "jsx": "react",
+    "module": "esnext",
+    "declaration": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+  },
+  "include": [
+    "src/**/*.ts",
+    "node_modules/@types/jest/index.d.ts"
+  ],
+  "types": [
+    "node",
+    "jest"
+  ]
+}
